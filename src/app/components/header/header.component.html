@@ -1,0 +1,16 @@
+<!-- 20:00 Header Component, add button color, text, buttonClick-->
+<!-- 22:30 add header tag, with title -->
+<!-- 24:00 add app-button -->
+<!-- 25:00 add color="green" and text ="Add"-->
+<!-- 29:30 toggleAddTask-->
+<!-- 1:45:00 {{ showAddTask ? 'red' : 'green' }}, {{ showAddTask ? 'Close' : 'Add' }} -->
+<!-- 1:59:30 add *ngIf - HasRoute to ensure button is only displayed on home page-->
+<header>
+  <h1>{{ title }}</h1>
+  <app-button
+    *ngIf="hasRoute('/')"
+    color="{{ showAddTask ? 'red' : 'green' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</header>

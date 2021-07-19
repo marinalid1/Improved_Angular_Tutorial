@@ -1,0 +1,7 @@
+/* 22:47 add css to header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}

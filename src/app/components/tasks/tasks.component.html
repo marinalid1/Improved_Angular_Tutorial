@@ -1,0 +1,12 @@
+<!-- 1:22:00, add app-add-task component -->
+<!-- 1:33:00 add onAddTask ($event) -->
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<!-- 37:00 *ngFor="let task of tasks", app-task-item -->
+<!-- 1:07:35, add onDelteTask -->
+<!-- 1:16:00, add onToggleReminder-->
+<app-task-item
+  *ngFor="let task of tasks"
+  [task]="task"
+  (onDeleteTask)="deleteTask(task)"
+  (onToggleReminder)="toggleReminder(task)"
+></app-task-item>
