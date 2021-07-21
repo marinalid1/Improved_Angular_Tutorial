@@ -18,6 +18,10 @@ export class AddTaskComponent implements OnInit {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
   text: string;
   day: string;
+  // add description
+  description: string;
+  // add location
+  location: string;
   reminder: boolean = false;
   showAddTask: boolean;
   subscription: Subscription;
@@ -47,6 +51,8 @@ export class AddTaskComponent implements OnInit {
     const newTask = {
       text: this.text,
       day: this.day,
+      description: this.description,
+      location: this.location,
       reminder: this.reminder,
     };
 
@@ -56,6 +62,8 @@ export class AddTaskComponent implements OnInit {
     // 1:31:00 clear form
     this.text = '';
     this.day = '';
+    this.description = '';
+    this.location = '';
     this.reminder = false;
   }
 }
