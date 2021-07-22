@@ -16,6 +16,13 @@
   justify-content: space-between;
 }
 
+/* check mark */
+.check{
+  text-align: right;
+  width: 100%;
+  padding-right: 40px;
+}
+
 /* Add css to description */
 #description {
   color: gray;

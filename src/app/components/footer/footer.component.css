@@ -2,3 +2,7 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+/* Completed Tasks */
+footer h2{
+  text-align: left;
+}

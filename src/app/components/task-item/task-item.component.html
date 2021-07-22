@@ -10,6 +10,12 @@
 >
   <h3>
     {{ task.text }}
+    <!-- add check mark -->
+    <fa-icon
+    class="check"
+    [ngStyle]="{ color: 'green' }"
+    [icon]="faCheck"
+    ></fa-icon>
     <fa-icon
       (click)="onDelete(task)"
       [ngStyle]="{ color: 'red' }"
